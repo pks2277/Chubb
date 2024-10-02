@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    
+</head>
+<body id="cart-page" class="bg-gray-100">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html"><h1 class="text-xl font-bold">Sneakers</h1></a>
+            </div>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-blue-500">Collections</a>
+                <a href="#" class="hover:text-blue-500">Men</a>
+                <a href="#" class="hover:text-blue-500">Women</a>
+                <a href="#" class="hover:text-blue-500">About</a>
+                <a href="#" class="hover:text-blue-500">Contact</a>
+            </nav>
+
+            <div class="flex space-x-4 items-center">
+                <a href="cart.html"><img src="img/cart_img.png" alt="Cart" class="w-6 h-6"></a>
+                <a href="#"><img src="img/profile_pic.jpeg" alt="User Profile" class="w-8 h-8 rounded-full"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-6">Your Cart</h1>
+        <div id="cart-items" class="bg-white p-4 shadow-lg rounded-lg mb-6 w-1/4"></div> <!-- Cart items will be displayed here -->
+        <div id="total-price" class="text-2xl font-semibold mb-4">Total: ₹0.00</div> <!-- Total price will be displayed here -->
+        <button class="checkout-btn bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600">Proceed to Checkout</button> <!-- Checkout button -->
+    </main>
+
+    <script src="main.js"></script> <!-- Link to the cart JavaScript file -->
+</body>
+</html>
